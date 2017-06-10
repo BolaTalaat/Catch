@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chatting_room"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+android:orientation="vertical"
+    tools:context="com.example.corsatk.ChattingRoom">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:elevation="100dp">
+
+        <LinearLayout
+            android:id="@+id/lnr_data_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:hint="Send Message"
+                android:id="@+id/msg_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView_chat_conversation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Test"
+                android:textSize="@dimen/nav_title_txtSize"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        >
+        </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:orientation="vertical">
+
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/image_profile"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/ic_action_personal"
+        app:border="true"
+        app:border_color="@android:color/white"
+        app:border_width="4dp"
+        app:shadow="true" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/White"
+        android:textSize="18sp" />
+</LinearLayout>

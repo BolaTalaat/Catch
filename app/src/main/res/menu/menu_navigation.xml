@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+
+            android:id="@+id/arabicCourses"
+            android:title="ARABIC COURSES"
+            android:icon="@mipmap/ic_arabic"/>
+        <item
+            android:id="@+id/englishCourses"
+            android:title="ENGLISH COURSES"
+            android:icon="@mipmap/ic_english"/>
+        <item
+            android:id="@+id/favorite"
+            android:title="FAVORITES"
+            android:icon="@mipmap/ic_favorites"/>
+
+        <item
+            android:id="@+id/uploadVideos"
+            android:title="UPLOAD VIDEOS"
+            android:icon="@mipmap/ic_uploads"/>
+
+
+        <item
+            android:id="@+id/ratetUs"
+            android:title="RATE US"
+            android:icon="@mipmap/ic_rate"/>
+        <item
+            android:id="@+id/help"
+            android:title="ASK HELP"
+            android:icon="@mipmap/ic_test"/>
+        <item
+            android:id="@+id/Showhelp"
+            android:title="Show HELP"
+            android:icon="@mipmap/ic_test"/>
+        <item
+            android:id="@+id/chat"
+            android:title="CHATTING"
+            android:icon="@mipmap/ic_test"/>
+        <item
+            android:id="@+id/aboutUs"
+            android:title="ABOUT US"
+            android:icon="@mipmap/ic_about"/>
+        <item
+            android:id="@+id/logout"
+            android:title="LOG OUT"
+            android:icon="@mipmap/ic_test"/>
+
+    </group>
+</menu>

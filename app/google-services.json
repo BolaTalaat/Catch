@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "502511543748",
+    "firebase_url": "https://corsatk2.firebaseio.com",
+    "project_id": "corsatk2",
+    "storage_bucket": "corsatk2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502511543748:android:131517bffd6a5c0c",
+        "android_client_info": {
+          "package_name": "com.example.corsatk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502511543748-dn1qo2cklg16970gpc3ec01s4rk82p59.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.corsatk",
+            "certificate_hash": "3dbd95b7b6415ad3c2106a1019a85a6cd9288408"
+          }
+        },
+        {
+          "client_id": "502511543748-8oh59om2lfcrv2t928l84ieok3h0kug7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsno6eSj4jf-yjEy5ZSmLFPRiKD0VdsMY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502511543748-8oh59om2lfcrv2t928l84ieok3h0kug7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
