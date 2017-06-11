@@ -203,6 +203,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         drawerLayout.closeDrawers();
                         break;
                     case R.id.uploadVideos:
+                        //ggf
                         intent = new Intent(MainActivity.this, UploadVideos.class);
                         startActivity(intent);
                         drawerLayout.closeDrawers();
