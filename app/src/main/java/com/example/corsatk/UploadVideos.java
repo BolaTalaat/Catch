@@ -26,7 +26,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
-
+// google email
 public class UploadVideos extends AppCompatActivity implements View.OnClickListener{
     //Google sign in
     private SignInButton mgoogleBtn;
