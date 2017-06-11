@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private GridView gridView;
     SliderLayout sliderLayout;   //image slider
     HashMap<String,String> Hash_file_maps ;  //image slider
+    private Uri selectedImageURI;
 
 
     @Override
@@ -203,7 +204,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         drawerLayout.closeDrawers();
                         break;
                     case R.id.uploadVideos:
-                        //ggf
                         intent = new Intent(MainActivity.this, UploadVideos.class);
                         startActivity(intent);
                         drawerLayout.closeDrawers();
@@ -237,9 +237,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
         header = navigationView.getHeaderView(0);
         TextView tv_email = (TextView) header.findViewById(R.id.tv_email);
-        if (myPrefs == null) {
-            imgProfile = (ImageView) header.findViewById(R.id.image_profile);
-        }
+
+        imgProfile = (ImageView) header.findViewById(R.id.image_profile);
+
 
         imgProfile.setOnClickListener(this);
         tv_email.setText("Toni@gmail.com");
@@ -291,6 +291,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent.setType("image/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
                 startActivityForResult(Intent.createChooser(intent, "Select Picture"), SELECT_PICTURE);
+
+
         }
     }
 
@@ -300,7 +302,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (resultCode == RESULT_OK) {
             if (requestCode == SELECT_PICTURE) {
 
-                Uri selectedImageURI = data.getData();
+                selectedImageURI = data.getData();
 
                 Picasso.with(MainActivity.this).load(selectedImageURI).noPlaceholder().centerCrop().fit()
                         .into((ImageView) findViewById(R.id.image_profile));
