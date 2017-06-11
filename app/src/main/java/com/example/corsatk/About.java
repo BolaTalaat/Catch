@@ -41,11 +41,13 @@ public class About extends AppCompatActivity {
         recyclerView.setLayoutManager(gridLayoutManager);
     }
     private void initItemsData() {
-        items = new ArrayList<>(4);
-        items.add(new Item(R.drawable.c_plus, "Bola ", "android ", "01281214755"));
-        items.add(new Item(R.drawable.c_plus, "Tony", "developer", " 01222435861"));
-        items.add(new Item(R.drawable.c_plus, "Shanz", "design" , "01271106522 "));
-        items.add(new Item(R.drawable.c_plus, "Hasseeb", "3le2", "01280959355"));
+        items = new ArrayList<>(6);
+        items.add(new Item(R.drawable.fahad, "DR.Fahad ", "Instructor", "01281214755"));
+        items.add(new Item(R.drawable.farid, "DR.Farid", "Instructor", " 01222435861"));
+        items.add(new Item(R.drawable.bola, "Bola", "android developer" , "bolatalaat055@gmail.com "));
+        items.add(new Item(R.drawable.tony, "Antonious", "android developer", "AntoniousJacoub@gmail.coom"));
+        items.add(new Item(R.drawable.ahmed, "Ahmed", "graphic designer", "ahmedshanzlezeh@outlook.com"));
+        items.add(new Item(R.drawable.mostafa, "Mostafa", "web developer", "mostafahasieb13@yahoo.com"));
     }
 
     @Override
