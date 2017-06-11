@@ -70,13 +70,14 @@ public class ChattingNames extends AppCompatActivity {
                 Set<String> set = new HashSet<String>();
                 Iterator i = dataSnapshot.getChildren().iterator();
 
-                while (i.hasNext()) {
-                    set.add(((DataSnapshot) i.next()).getKey());
-                }
+                while (i.hasNext() ) {
 
+                    set.add(((DataSnapshot) i.next()).getKey());
+
+                }
                 list_of_rooms.clear();
                 list_of_rooms.addAll(set);
-
+                list_of_rooms.remove("help requests");
                 arrayAdapter.notifyDataSetChanged();
             }
 
