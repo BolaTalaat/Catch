@@ -5,4 +5,9 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_uploadVideos_paragraphs">
+        If you have a channel or videos and want to our users see it ?\n
+        Please send your link to us...\n
+        If you have videos and not have channel to upload send E-mail \"catchbns@gmail.com\" to get username and password to upload it.
+         </string>
 </resources>

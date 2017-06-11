@@ -33,6 +33,7 @@ import com.example.corsatk.About;
 import com.example.corsatk.ChattingNames;
 import com.example.corsatk.MakeHelp;
 import com.example.corsatk.ShowHelp;
+import com.example.corsatk.UploadVideos;
 import com.example.corsatk.courses.ArabicCourses;
 import com.example.corsatk.AskHelp;
 import com.example.corsatk.courses.EnglishCourses;
@@ -198,6 +199,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     case R.id.chat:
                         Toast.makeText(getApplicationContext(), "Lets start chatting", Toast.LENGTH_SHORT).show();
                         intent = new Intent(MainActivity.this, ChattingNames.class);
+                        startActivity(intent);
+                        drawerLayout.closeDrawers();
+                        break;
+                    case R.id.uploadVideos:
+                        intent = new Intent(MainActivity.this, UploadVideos.class);
                         startActivity(intent);
                         drawerLayout.closeDrawers();
                         break;
