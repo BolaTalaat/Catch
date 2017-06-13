@@ -10,4 +10,6 @@
         Please send your link to us...\n
         If you have videos and not have channel to upload send E-mail \"catchbns@gmail.com\" to get username and password to upload it.
          </string>
+    <string name="minimum_pass">Password is short</string>
+    <string name="auth_failed">Auth Failed Try Again </string>
 </resources>

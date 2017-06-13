@@ -35,10 +35,9 @@ import com.example.corsatk.MakeHelp;
 import com.example.corsatk.ShowHelp;
 import com.example.corsatk.UploadVideos;
 import com.example.corsatk.courses.ArabicCourses;
-import com.example.corsatk.AskHelp;
 import com.example.corsatk.courses.EnglishCourses;
 import com.example.corsatk.R;
-import com.example.corsatk.view.Login;
+import com.example.corsatk.view.LoginMainDesign;
 import com.example.corsatk.view.RateUs;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
@@ -216,7 +215,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         builder.setNegativeButton("ok", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
-                                        Intent intent = new Intent(MainActivity.this, Login.class);
+                                        Intent intent = new Intent(MainActivity.this, LoginMainDesign.class);
                                         startActivity(intent);
                                     }
                                 }
