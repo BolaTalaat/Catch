@@ -1,4 +1,4 @@
-package com.example.corsatk;
+package com.example.corsatk.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +9,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import com.example.corsatk.controller.Item;
+import com.example.corsatk.R;
+import com.example.corsatk.adapters.ItemAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,6 +52,31 @@ public class About extends AppCompatActivity {
         items.add(new Item(R.drawable.tony, "Antonious", "android developer", "AntoniousJacoub@gmail.coom"));
         items.add(new Item(R.drawable.ahmed, "Ahmed", "graphic designer", "ahmedshanzlezeh@outlook.com"));
         items.add(new Item(R.drawable.mostafa, "Mostafa", "web developer", "mostafahasieb13@yahoo.com"));
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 
     @Override

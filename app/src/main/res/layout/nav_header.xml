@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingTop="20dp"
     android:paddingBottom="20dp"
-    android:background="@color/colorPrimaryDark"
+    android:background="#FDB61D"
     android:layout_width="match_parent"
     android:layout_height="190dp"
     android:orientation="vertical">
@@ -12,7 +12,7 @@
         android:id="@+id/image_profile"
         android:layout_width="72dp"
         android:layout_height="72dp"
-        android:src="@drawable/ic_action_personal"
+        android:src="@drawable/art"
         app:border="true"
         app:border_color="@android:color/white"
         app:border_width="4dp"
@@ -23,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textColor="@color/White"
+        android:textColor="#000000"
+
         android:textSize="18sp" />
 </LinearLayout>

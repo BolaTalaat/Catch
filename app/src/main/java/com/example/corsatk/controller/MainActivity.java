@@ -29,11 +29,10 @@ import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
-import com.example.corsatk.About;
-import com.example.corsatk.ChattingNames;
-import com.example.corsatk.MakeHelp;
-import com.example.corsatk.ShowHelp;
-import com.example.corsatk.UploadVideos;
+import com.example.corsatk.view.About;
+import com.example.corsatk.view.ChattingNames;
+import com.example.corsatk.view.ShowHelp;
+import com.example.corsatk.view.UploadVideos;
 import com.example.corsatk.courses.ArabicCourses;
 import com.example.corsatk.courses.EnglishCourses;
 import com.example.corsatk.R;
@@ -128,7 +127,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     // related to image slider
-    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {}
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+    }
 
     @Override
     // related to image slider
