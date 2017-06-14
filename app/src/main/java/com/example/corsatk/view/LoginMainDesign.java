@@ -124,7 +124,9 @@ public class LoginMainDesign extends AppCompatActivity implements View.OnClickLi
         int id = v.getId();
         switch (id) {
             case R.id.btnLogin:
-                onLogin();
+                //onLogin();
+                startActivity(new Intent(LoginMainDesign.this, MainActivity.class));
+                finish();
         }   }
 
     private void onRegister() {
