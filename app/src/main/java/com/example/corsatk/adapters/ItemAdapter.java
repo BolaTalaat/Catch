@@ -1,4 +1,4 @@
-package com.example.corsatk;
+package com.example.corsatk.adapters;
 
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.corsatk.controller.Item;
+import com.example.corsatk.R;
 
 import java.util.List;
 

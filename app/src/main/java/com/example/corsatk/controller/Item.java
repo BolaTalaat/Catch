@@ -1,4 +1,4 @@
-package com.example.corsatk;
+package com.example.corsatk.controller;
 
 /**
  * Created by bola on 5/25/2017.

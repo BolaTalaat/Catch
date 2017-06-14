@@ -1,4 +1,4 @@
-package com.example.corsatk;
+package com.example.corsatk.view;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.corsatk.R;
+import com.example.corsatk.controller.posthelp;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;

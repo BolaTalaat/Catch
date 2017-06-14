@@ -1,4 +1,4 @@
-package com.example.corsatk;
+package com.example.corsatk.view;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.corsatk.R;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;

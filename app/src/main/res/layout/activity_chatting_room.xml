@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
 
 android:orientation="vertical"
-    tools:context="com.example.corsatk.ChattingRoom">
+    tools:context="com.example.corsatk.view.ChattingRoom">
 
     <include
         android:id="@+id/app_bar"
