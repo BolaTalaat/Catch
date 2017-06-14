@@ -127,7 +127,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     // related to image slider
-    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {}
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+    }
 
     @Override
     // related to image slider
