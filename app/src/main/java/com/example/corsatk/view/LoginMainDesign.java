@@ -23,6 +23,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginMainDesign extends AppCompatActivity implements View.OnClickListener {
 
@@ -35,6 +36,7 @@ public class LoginMainDesign extends AppCompatActivity implements View.OnClickLi
     private EditText etdEmailLogIn,etdPasswordLogin ;
     private EditText inputEmail, inputPassword;
     private Button btnLogIn, btnSignUp, btnResetPassword;
+    private FirebaseAuth.AuthStateListener authListener;
     private FirebaseAuth auth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +44,7 @@ public class LoginMainDesign extends AppCompatActivity implements View.OnClickLi
         setContentView(R.layout.main_desgin);
         tvSigninInvoker=(TextView) findViewById(R.id.tvSigninInvoker);
         tvSignupInvoker=(TextView) findViewById(R.id.tvSignupInvoker);
-        btnSignin=(Button) findViewById(R.id.btnLogin);
+       btnSignin=(Button) findViewById(R.id.btnLogin);
         btnSignin.setOnClickListener(this);
         btnRegister=(Button) findViewById(R.id.btnRegister);
         btnRegister.setOnClickListener(this);
@@ -54,6 +56,22 @@ public class LoginMainDesign extends AppCompatActivity implements View.OnClickLi
 
         //////////////////////////
         auth = FirebaseAuth.getInstance();
+
+        final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+        authListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user != null) {
+                    // user auth state is changed - user is null
+                    // launch login activity
+                    startActivity(new Intent(LoginMainDesign.this, MainActivity.class));
+                    finish();
+                }
+            }
+        };
+
         inputEmail = (EditText) findViewById(R.id.emailRegister);
         inputPassword = (EditText) findViewById(R.id.passwordRegister);
         /////////////////////////////
@@ -124,9 +142,8 @@ public class LoginMainDesign extends AppCompatActivity implements View.OnClickLi
         int id = v.getId();
         switch (id) {
             case R.id.btnLogin:
-                //onLogin();
-                startActivity(new Intent(LoginMainDesign.this, MainActivity.class));
-                finish();
+                onLogin();
+
         }   }
 
     private void onRegister() {
@@ -221,6 +238,18 @@ public class LoginMainDesign extends AppCompatActivity implements View.OnClickLi
 
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        auth.addAuthStateListener(authListener);
+    }
 
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (authListener != null) {
+            auth.removeAuthStateListener(authListener);
+        }
+    }
 }
 
